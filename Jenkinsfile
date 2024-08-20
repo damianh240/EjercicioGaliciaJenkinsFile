@@ -12,7 +12,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build('mi-imagen:latest')
+                    docker.build("mi-imagen:latest")
                 }
             }
         }
@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    docker.image('mi-imagen:latest').run('-p 8000:8000')
+                    docker.image("mi-imagen:latest").run('-p 8000:8000')
                 }
             }
         }
