@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/damianh240/app-fastapi.git'
+                git 'https://github.com/damianh240/EjercicioGalicia.git'
             }
         }
 
