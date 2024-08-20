@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Descargar el código fuente desde Git
-                git url: 'https://github.com/damianh240/EjercicioGalicia.git'
+                git url: 'https://github.com/damianh240/app-fastapi.git'
             }
         }
 
